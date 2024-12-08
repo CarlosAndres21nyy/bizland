@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Carlos Rodríguez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            background-color: #006633;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004d26;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #006633;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .section {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            font-size: 1.2em;
+        }
+        .section h2 {
+            color: #006633;
+            text-align: center;
+            font-size: 2em;
+        }
+        .profile-img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-img-container img {
+            max-width: 100%;
+            height: 250px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #004d26;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-left, .footer-right {
+            flex: 1;
+            padding: 0 10px;
+        }
+        .footer-right {
+            text-align: right;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .social-icons a:hover {
+            color: #006633;
+        }
+        .sidebar {
+            position: fixed;
+            top: 50%;
+            left: -150px;
+            transform: translateY(-50%);
+            background-color: #004d26;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+            transition: left 0.3s;
+        }
+        .sidebar:hover {
+            left: 0;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin-bottom: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .sidebar a:hover,
+        .sidebar a.active {
+            background-color: white;
+            color: #006633;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Carlos Rodríguez</h1>
+    </header>
+    <nav>
+        <a href="#about">Acerca de</a>
+        <a href="#education">Educación</a>
+        <a href="#experience">Experiencia Laboral</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#extracurricular">Extracurriculares</a>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <a href="#about">Acerca de</a>
+        <a href="#education">Educación</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#extracurricular">Extracurriculares</a>
+    </div>
+    <main>
+        <div class="section" id="about">
+            <h2>Acerca de</h2>
+            <p>Carlos Rodríguez</p>
+            <p>Tegucigalpa, Honduras</p>
+            <p>Email: carlosnyy2000@gmail.com</p>
+            <p>Estudiante de la carrera de Comunicación Audiovisual y Publicitaria, actualmente en cuarto año en la Universidad Tecnológica Centroamericana (UNITEC). Apasionado por los deportes y la política, formándome para cumplir mi sueño y convertirme en periodista deportivo, al mismo tiempo que exploro la rama de comunicación política. Aspiro a sacar un postgrado de periodismo deportivo y comunicación política en Barcelona.</p>
+            <div class="profile-img-container">
+                <img src="IMG/Foto personal Carlos.jpg" alt="Foto personal Carlos">
+            </div>
+        </div>
+        <div class="section" id="education">
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <strong>Título de Bachillerato</strong><br>
+                    Dowal School<br>
+                    2013 - 2018, Tegucigalpa
+                </li>
+                <li>
+                    <strong>Ciencias de la Comunicación</strong><br>
+                    Universidad Católica de Honduras UNICAH<br>
+                    2018 - 2020, Tegucigalpa
+                </li>
+                <li>
+                    <strong>Comunicación Audiovisual y Publicitaria</strong><br>
+                    Universidad Tecnológica Centroamericana UNITEC<br>
+                    2020 - presente, Tegucigalpa
+                </li>
+            </ul>
+        </div>
+        <div class="section" id="experience">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li><strong>Locutor de Radio</strong><br>
+                    Emisoras Unidas<br>
+                    2018 - 2019
+                </li>
+                <li><strong>Agente de Servicio al Cliente</strong><br>
+                    IntouchCX<br>
+                    2021 - 2023
+                </li>
+            </ul>
+        </div>
+        <div class="section" id="projects">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><strong>Director de Audio</strong><br>
+                    Lo que Callan los Pasillos<br>
+                    2024, Tegucigalpa
+                </li>
+                <li><strong>Editor de Audio</strong><br>
+                    Lo que Callan los Pasillos<br>
+                    2024, Tegucigalpa
+                </li>
+                <li><strong>Script</strong><br>
+                    Duplicados<br>
+                    2024, Tegucigalpa
+                </li>
+                <li><strong>Guionista</strong><br>
+                    Duplicados<br>
+                    2024, Tegucigalpa
+                </li>
+                <li><strong>Operador de cámara</strong><br>
+                    Mi Primera Chamba<br>
+                    2023, Tegucigalpa
+                </li>
+                <li><strong>Iluminación</strong><br>
+                    Bajo el Mismo Techo<br>
+                    2023, Tegucigalpa
+                </li>
+            </ul>
+        </div>
+        <div class="section" id="extracurricular">
+            <h2>Extracurriculares</h2>
+            <ul>
+                <li>Curso de Comunicaciones Efectivas y Relaciones Humanas, Dale Carnegie, Tegucigalpa (2018-2019)</li>
+                <li>Premio más alto en el curso de Comunicaciones Efectivas y Relaciones Humanas en Dale Carnegie, Tegucigalpa (2018-2019)</li>
+                <li>Ganador del Concurso Oral de Inglés por el mejor discurso en la Escuela Dowal (2017)</li>
+                <li>Fluidez en Adobe Premiere, Adobe Photoshop, Adobe Illustrator, Adobe InDesign y Adobe Audition</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:carlosnyy2000@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:96287049"><i class="fas fa-phone"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Carlos Andrés Rodríguez</p>
+            <p>Email: carlosnyy2000@gmail.com</p>
+            <p>Phone: 96287049</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.getElementById('sidebar');
+            const sidebarLinks = sidebar.querySelectorAll('a');
+            const sections = document.querySelectorAll('.section');
+            let isScrolling;
+
+            function setActiveLink() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+                sidebarLinks.forEach((link) => link.classList.remove('active'));
+                sidebarLinks[index].classList.add('active');
+            }
+
+            function showSidebar() {
+                sidebar.style.left = '0';
+                clearTimeout(isScrolling);
+                isScrolling = setTimeout(hideSidebar, 1000);
+            }
+
+            function hideSidebar() {
+                if (!sidebar.matches(':hover')) {
+                    sidebar.style.left = '-150px';
+                }
+            }
+
+            window.addEventListener('scroll', showSidebar);
+            sidebar.addEventListener('mouseenter', showSidebar);
+            sidebar.addEventListener('mouseleave', hideSidebar);
+
+            setActiveLink();
+            window.addEventListener('scroll', setActiveLink);
+        });
+    </script>
+</body>
+</html>
